@@ -1,0 +1,14 @@
+print("max consecutive ones are :",max_consecutive_ones(arr))
+def single_num(nums):
+    for num in nums:
+        if nums.count(num)==1:
+            return num
+nums=[1,1,2,2,3,4,4]
+print("single appearance is:",single_num(nums))
+nums=[1,1,2,3,3,4,4]
+def single_number(nums):
+    x = 0
+    for n in nums:
+        x ^= n
+    return x
+print("single appearance is:",single_number(nums))
